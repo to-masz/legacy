@@ -22,7 +22,6 @@ class Autoloader
         foreach ($options as $optionPathParts) {
             $classPath = PROJECT_DIR . DS . implode(DS, $optionPathParts) . ".php";
 
-            var_dump($classPath);
             if (file_exists($classPath)) {
                 require_once $classPath;
                 return true;
