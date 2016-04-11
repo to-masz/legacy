@@ -7,11 +7,12 @@
     "require-dev": {
         "facebook/webdriver": "^1.1",
         "phpunit/phpunit": "^5.3",
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "^6.2",
+        "codeception/aspect-mock": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "tomasz\\legacy\\": "./src/",
+            "tomasz\\legacy\\": ["./src/", "./src/lib/", "./test/unit/"],
             "tomasz\\legacy\\functional\\": "./test/functional/"
         }
     }
